@@ -11,9 +11,9 @@
       "region": "us-west-1",
       "timeout": 30,
       "environment": {
-        "CLIENT_ID": "138731210214-2pp63j3v4ac3osfi47ols3i1ltf90hpt.apps.googleusercontent.com",
-        "CLIENT_SECRET": "W4lnCCJJ2PLXqRh0xjzskHTz",
-        "PROJECT_ID": "meet-app-325321",
+        "CLIENT_ID": "477959438240-gsj8dsk54orkh1fadne5qn9v4hfhh83u.apps.googleusercontent.com",
+        "CLIENT_SECRET": "VoKkOAugzuTiT9ue9u7HwZsb",
+        "PROJECT_ID": "meet-app-326016",
         "CALENDAR_ID": "fullstackwebdev@careerfoundry.com"
       },
       "stage": "dev",
@@ -193,7 +193,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/auth-server/dev/1631546386957-2021-09-13T15:19:46.957Z/auth-server.zip"
+                "S3Key": "serverless/auth-server/dev/1631641151807-2021-09-14T17:39:11.807Z/auth-server.zip"
               },
               "Handler": "handler.getAuthURL",
               "Runtime": "nodejs12.x",
@@ -202,9 +202,9 @@
               "Timeout": 30,
               "Environment": {
                 "Variables": {
-                  "CLIENT_ID": "138731210214-2pp63j3v4ac3osfi47ols3i1ltf90hpt.apps.googleusercontent.com",
-                  "CLIENT_SECRET": "W4lnCCJJ2PLXqRh0xjzskHTz",
-                  "PROJECT_ID": "meet-app-325321",
+                  "CLIENT_ID": "477959438240-gsj8dsk54orkh1fadne5qn9v4hfhh83u.apps.googleusercontent.com",
+                  "CLIENT_SECRET": "VoKkOAugzuTiT9ue9u7HwZsb",
+                  "PROJECT_ID": "meet-app-326016",
                   "CALENDAR_ID": "fullstackwebdev@careerfoundry.com"
                 }
               },
@@ -226,7 +226,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/auth-server/dev/1631546386957-2021-09-13T15:19:46.957Z/auth-server.zip"
+                "S3Key": "serverless/auth-server/dev/1631641151807-2021-09-14T17:39:11.807Z/auth-server.zip"
               },
               "Handler": "handler.getAccessToken",
               "Runtime": "nodejs12.x",
@@ -235,9 +235,9 @@
               "Timeout": 30,
               "Environment": {
                 "Variables": {
-                  "CLIENT_ID": "138731210214-2pp63j3v4ac3osfi47ols3i1ltf90hpt.apps.googleusercontent.com",
-                  "CLIENT_SECRET": "W4lnCCJJ2PLXqRh0xjzskHTz",
-                  "PROJECT_ID": "meet-app-325321",
+                  "CLIENT_ID": "477959438240-gsj8dsk54orkh1fadne5qn9v4hfhh83u.apps.googleusercontent.com",
+                  "CLIENT_SECRET": "VoKkOAugzuTiT9ue9u7HwZsb",
+                  "PROJECT_ID": "meet-app-326016",
                   "CALENDAR_ID": "fullstackwebdev@careerfoundry.com"
                 }
               },
@@ -259,7 +259,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/auth-server/dev/1631546386957-2021-09-13T15:19:46.957Z/auth-server.zip"
+                "S3Key": "serverless/auth-server/dev/1631641151807-2021-09-14T17:39:11.807Z/auth-server.zip"
               },
               "Handler": "handler.getCalendarEvents",
               "Runtime": "nodejs12.x",
@@ -268,9 +268,9 @@
               "Timeout": 30,
               "Environment": {
                 "Variables": {
-                  "CLIENT_ID": "138731210214-2pp63j3v4ac3osfi47ols3i1ltf90hpt.apps.googleusercontent.com",
-                  "CLIENT_SECRET": "W4lnCCJJ2PLXqRh0xjzskHTz",
-                  "PROJECT_ID": "meet-app-325321",
+                  "CLIENT_ID": "477959438240-gsj8dsk54orkh1fadne5qn9v4hfhh83u.apps.googleusercontent.com",
+                  "CLIENT_SECRET": "VoKkOAugzuTiT9ue9u7HwZsb",
+                  "PROJECT_ID": "meet-app-326016",
                   "CALENDAR_ID": "fullstackwebdev@careerfoundry.com"
                 }
               },
@@ -285,34 +285,34 @@
               "GetCalendarEventsLogGroup"
             ]
           },
-          "GetAuthURLLambdaVersiony5XXziCW1rPq5nAvk42HvtfUd2IWYGbT4RdTSyKXz0": {
+          "GetAuthURLLambdaVersioniEsj4vT6bjnxmUqZHOUDFTAzpekgSoEZjnZ6XMDxDJI": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetAuthURLLambdaFunction"
               },
-              "CodeSha256": "PqXjRyPr2+VzGeDbYAH3SFx0Btyur0YCp1VQ5DYa6Yk="
+              "CodeSha256": "LzKp0cHu/82GeKqEu//RDc5qNQ07uC+h52e7HH5X79I="
             }
           },
-          "GetAccessTokenLambdaVersion9423QnXE6R9caVFJJg0ygAVr4RMl5LolfcFhNXQ7T3k": {
+          "GetAccessTokenLambdaVersion20yVRfskXuZX7UAbINfNCmEiliqThXxpYVkjVTtQE": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetAccessTokenLambdaFunction"
               },
-              "CodeSha256": "PqXjRyPr2+VzGeDbYAH3SFx0Btyur0YCp1VQ5DYa6Yk="
+              "CodeSha256": "LzKp0cHu/82GeKqEu//RDc5qNQ07uC+h52e7HH5X79I="
             }
           },
-          "GetCalendarEventsLambdaVersionbnaWgbdHlnq0i2RDbOwkPgrxMcs5ncND0XgQvMqdog": {
+          "GetCalendarEventsLambdaVersionItNc5HdhyAVWUoE4nsuYh3gtCbPCeIqRdetUieXg": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetCalendarEventsLambdaFunction"
               },
-              "CodeSha256": "PqXjRyPr2+VzGeDbYAH3SFx0Btyur0YCp1VQ5DYa6Yk="
+              "CodeSha256": "LzKp0cHu/82GeKqEu//RDc5qNQ07uC+h52e7HH5X79I="
             }
           },
           "ApiGatewayRestApi": {
@@ -540,7 +540,7 @@
               "GetCalendarEventsLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1631546383301": {
+          "ApiGatewayDeployment1631641148146": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -678,7 +678,7 @@
           "GetAuthURLLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetAuthURLLambdaVersiony5XXziCW1rPq5nAvk42HvtfUd2IWYGbT4RdTSyKXz0"
+              "Ref": "GetAuthURLLambdaVersioniEsj4vT6bjnxmUqZHOUDFTAzpekgSoEZjnZ6XMDxDJI"
             },
             "Export": {
               "Name": "sls-auth-server-dev-GetAuthURLLambdaFunctionQualifiedArn"
@@ -687,7 +687,7 @@
           "GetAccessTokenLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetAccessTokenLambdaVersion9423QnXE6R9caVFJJg0ygAVr4RMl5LolfcFhNXQ7T3k"
+              "Ref": "GetAccessTokenLambdaVersion20yVRfskXuZX7UAbINfNCmEiliqThXxpYVkjVTtQE"
             },
             "Export": {
               "Name": "sls-auth-server-dev-GetAccessTokenLambdaFunctionQualifiedArn"
@@ -696,7 +696,7 @@
           "GetCalendarEventsLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetCalendarEventsLambdaVersionbnaWgbdHlnq0i2RDbOwkPgrxMcs5ncND0XgQvMqdog"
+              "Ref": "GetCalendarEventsLambdaVersionItNc5HdhyAVWUoE4nsuYh3gtCbPCeIqRdetUieXg"
             },
             "Export": {
               "Name": "sls-auth-server-dev-GetCalendarEventsLambdaFunctionQualifiedArn"
@@ -833,7 +833,7 @@
         "timeout": 30,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "GetAuthURLLambdaVersiony5XXziCW1rPq5nAvk42HvtfUd2IWYGbT4RdTSyKXz0"
+        "versionLogicalId": "GetAuthURLLambdaVersioniEsj4vT6bjnxmUqZHOUDFTAzpekgSoEZjnZ6XMDxDJI"
       },
       "getAccessToken": {
         "handler": "handler.getAccessToken",
@@ -852,7 +852,7 @@
         "timeout": 30,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "GetAccessTokenLambdaVersion9423QnXE6R9caVFJJg0ygAVr4RMl5LolfcFhNXQ7T3k"
+        "versionLogicalId": "GetAccessTokenLambdaVersion20yVRfskXuZX7UAbINfNCmEiliqThXxpYVkjVTtQE"
       },
       "getCalendarEvents": {
         "handler": "handler.getCalendarEvents",
@@ -871,7 +871,7 @@
         "timeout": 30,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "GetCalendarEventsLambdaVersionbnaWgbdHlnq0i2RDbOwkPgrxMcs5ncND0XgQvMqdog"
+        "versionLogicalId": "GetCalendarEventsLambdaVersionItNc5HdhyAVWUoE4nsuYh3gtCbPCeIqRdetUieXg"
       }
     },
     "configValidationMode": "warn",
@@ -893,7 +893,7 @@
     "artifact": "C:\\Users\\lankyjoe\\meet\\auth-server\\.serverless\\auth-server.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/auth-server/dev/1631546386957-2021-09-13T15:19:46.957Z",
+    "artifactDirectoryName": "serverless/auth-server/dev/1631641151807-2021-09-14T17:39:11.807Z",
     "artifact": "auth-server.zip"
   }
 }

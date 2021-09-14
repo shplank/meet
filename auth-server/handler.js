@@ -99,10 +99,11 @@ module.exports.getCalendarEvents = async (event) => {
   const oAuth2Client = new google.auth.OAuth2(
     client_id,
     client_secret,
-    redirect_uris[0]
+    redirect_uris[0],
+    calendar_id
   );
   // get access token
-  const access_token = decodeURIComponent(`${event.pathParameters.code}`);
+  const access_token = decodeURIComponent(`${event.pathParameters.access_token}`);
   oAuth2Client.setCredentials({ access_token });
 
   return new Promise((resolve, reject) => {
@@ -128,7 +129,6 @@ module.exports.getCalendarEvents = async (event) => {
       statusCode: 200,
       headers: {
         "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Credentials": "true"
       },
       body: JSON.stringify({ events: results.data.items }),
     };
@@ -139,7 +139,6 @@ module.exports.getCalendarEvents = async (event) => {
       statusCode: 500,
       headers: {
         "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Credentials": "true"
       },
       body: JSON.stringify(err),
     };
