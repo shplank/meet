@@ -45,7 +45,7 @@ module.exports.getAuthURL = async () => {
   return {
     statusCode: 200,
     headers: {
-      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Origin": "*"
     },
     body: JSON.stringify({
       authUrl: authUrl,
@@ -77,7 +77,7 @@ module.exports.getAccessToken = async (event) => {
     return {
       statusCode: 200,
       headers: {
-        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Origin": "*"
       },
       body: JSON.stringify(token),
     };
@@ -87,7 +87,7 @@ module.exports.getAccessToken = async (event) => {
     return {
       statusCode: 500,
       headers: {
-        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Origin": "*"
       },
       body: JSON.stringify(err),
     };
@@ -104,6 +104,7 @@ module.exports.getCalendarEvents = async (event) => {
   );
   // get access token
   const access_token = decodeURIComponent(`${event.pathParameters.access_token}`);
+  
   oAuth2Client.setCredentials({ access_token });
 
   return new Promise((resolve, reject) => {
@@ -122,15 +123,17 @@ module.exports.getCalendarEvents = async (event) => {
         } else {
           resolve(response);
         }
-      })
+      }
+    );
+  })
   .then((results) => {
     // respond with events
     return {
       statusCode: 200,
       headers: {
-        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Origin": "*"
       },
-      body: JSON.stringify({ events: results.data.items }),
+      body: JSON.stringify({ events: results.data.items })
     };
   })
   .catch((err) => {
@@ -138,9 +141,9 @@ module.exports.getCalendarEvents = async (event) => {
     return {
       statusCode: 500,
       headers: {
-        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Origin": "*"
       },
       body: JSON.stringify(err),
     };
   });
-})};
+};
