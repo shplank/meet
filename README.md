@@ -1,6 +1,14 @@
 MEET app
 
+A serverless, progressive web application (PWA) built with React using a test-driven development (TDD) technique. The application uses the Meetup API to fetch upcoming events for a selected city.
+
 User Stories and Test Scenarios
+
+FEATURE 1: FILTER EVENTS BY CITY
+
+Scenario 1: When user hasn’t searched for a city, show upcoming events from all cities.
+Scenario 2: User should see a list of suggestions when they search for a city.
+Scenario 3: User can select a city from the suggested list.
 
 FEATURE 2: SHOW/HIDE AN EVENT'S DETAILS
 
