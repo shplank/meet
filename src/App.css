@@ -6,6 +6,11 @@
 
 .App * {
   box-sizing: border-box;
+  background-image: url(../public/composite.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #fff;
 }
 
 ul {
