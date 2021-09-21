@@ -16,10 +16,10 @@ describe('<NumberOfEvents /> component', () => {
   });
   test('change state when text input changes', () => {
     NumberOfEventsWrapper.setState({
-      eventNumber: '32'
+      eventNumber: 32
     });
-    const eventObject = { target: { value: '20' }};
+    const eventObject = { target: { value: 20 }};
     NumberOfEventsWrapper.find('.number-input').simulate('change', eventObject);
-    expect(NumberOfEventsWrapper.state('eventNumber')).toBe('20');
+    expect(NumberOfEventsWrapper.state('eventNumber')).toBe(20);
   });
 });
