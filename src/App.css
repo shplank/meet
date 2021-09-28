@@ -90,13 +90,14 @@ input[type="number"] {
 }
 
 .event-container {
-  background-color: #fff;
+  background-color: #ddd;
   padding: 10px 10px 35px;
   margin-bottom: 10px;
   text-align: left;
   border: 1px solid #222;
   border-radius: 4px;
   position: relative;
+  width: 60%;
 }
 
 .details-btn {

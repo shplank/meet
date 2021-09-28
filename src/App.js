@@ -5,6 +5,7 @@ import EventList from './EventList';
 import CitySearch from './CitySearch';
 import NumberOfEvents from './NumberOfEvents';
 import { getEvents, extractLocations } from './api';
+import logo from './MEETthin.png';
 
 class App extends Component {
   state = {
@@ -52,6 +53,7 @@ class App extends Component {
     const { locations, events, numberOfEvents } = this.state;
     return (
       <div className="App">
+        <img height="60px" src={logo} alt="Logo" />
         <CitySearch locations={locations} updateEvents={this.updateEvents} />
         <NumberOfEvents numberOfEvents={numberOfEvents} updateNumberOfEvents={this.updateNumberOfEvents} />
         <EventList events={events} />
