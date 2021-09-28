@@ -12,14 +12,14 @@ describe('<NumberOfEvents /> component', () => {
   });
   test('number box renders with default value 32', () => {
     expect(NumberOfEventsWrapper.find('.number-input')).toHaveLength(1); 
-    expect(NumberOfEventsWrapper.state('eventNumber')).toBe(32);
+    expect(NumberOfEventsWrapper.state('numberOfEvents')).toBe(32);
   });
   test('change state when text input changes', () => {
     NumberOfEventsWrapper.setState({
-      eventNumber: 32
+      numberOfEvents: 32
     });
     const eventObject = { target: { value: 20 }};
     NumberOfEventsWrapper.find('.number-input').simulate('change', eventObject);
-    expect(NumberOfEventsWrapper.state('eventNumber')).toBe(20);
+    expect(NumberOfEventsWrapper.state('numberOfEvents')).toBe(20);
   });
 });
