@@ -1,16 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:500);
+
 .App {
   text-align: center;
   padding: 2% 5%;
-  background-image: url(/composite.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-color: #fff;
 }
 
 .App * {
   box-sizing: border-box;
+  background-image: url(./composite.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #fff;
+  background-size: cover;
 }
 
 ul {
@@ -25,8 +27,14 @@ p {
 .display-none {
   display: none;
 }
+
 .suggestions {
   display: block;
+}
+
+.label {
+  color: black;
+  text-shadow: 2px 2px 5px white;
 }
 
 input[type="text"],
@@ -78,14 +86,15 @@ input[type="number"] {
 }
 
 .suggestions > li:hover {
-  background-color: #bcdcdb;
+  background-color: #bccceb;
 }
 
 .event-container {
+  background-color: #fff;
   padding: 10px 10px 35px;
   margin-bottom: 10px;
   text-align: left;
-  border: 1px solid #ccc;
+  border: 1px solid #222;
   border-radius: 4px;
   position: relative;
 }
