@@ -128,16 +128,16 @@ input[type="number"] {
   overflow-x: hidden;
 }
 
-.number-label {
-  display: inline-block;
-  margin-right: 10px;
-}
-
 .number-container {
   display: inline-block;
+  background-color: #fff;
   width: 200px;
   margin: 20px auto;
   text-align: center;
+}
+
+.number-label {
+  margin-right: 10px;
 }
 
 .button-wrapper {
