@@ -129,7 +129,6 @@ input[type="number"] {
 }
 
 .number-container {
-  display: inline-block;
   background-color: #fff;
   width: 200px;
   margin: 20px auto;
@@ -137,7 +136,12 @@ input[type="number"] {
 }
 
 .number-label {
+  display: inline-block;
   margin-right: 10px;
+}
+
+.number-input {
+  display: inline-block;
 }
 
 .button-wrapper {
