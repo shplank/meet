@@ -5,7 +5,7 @@ import EventList from './EventList';
 import CitySearch from './CitySearch';
 import NumberOfEvents from './NumberOfEvents';
 import { getEvents, extractLocations } from './api';
-import logo from './MEETthin.png';
+import logo from './MEETthin2.png';
 
 class App extends Component {
   state = {

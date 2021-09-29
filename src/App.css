@@ -2,11 +2,12 @@
 
 .App {
   text-align: center;
+  height: 100%;
   padding: 2% 5%;
   background-image: url(./composite.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center top;
   background-color: #fff;
   background-size: cover;
 }
@@ -45,7 +46,7 @@ input[type="number"] {
 }
 
 .city {
-  width: 250px;
+  width: 200px;
 }
 
 .CitySearch {
@@ -89,13 +90,14 @@ input[type="number"] {
   padding: 10px 10px 35px;
   margin: 10px 15%;
   text-align: left;
-  border: 1px solid #222;
+  border: 2px solid #222;
   border-radius: 5px;
   position: relative;
 }
 
 .details-btn {
   position: absolute;
+  background-color: #ddd;
   right: 5px;
   bottom: 5px;
   padding: 5px 8px;
