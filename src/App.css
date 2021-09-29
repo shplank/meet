@@ -51,6 +51,7 @@ input[type="number"] {
   padding: 8px 6px 8px 10px;
   border-radius: 4px;
   outline: none;
+  border: 1px solid #333;
   font-size: 14px;
   line-height: 20px;
   align-self: center;
@@ -58,7 +59,7 @@ input[type="number"] {
 }
 
 .city {
-  width: 250px;
+  width: 270px;
 }
 
 .CitySearch {
@@ -96,6 +97,32 @@ input[type="number"] {
 
 .suggestions > li:hover {
   background-color: #bccceb;
+}
+
+.number-container {
+  background-color: #fff;
+  width: 210px;
+  height: 40px;
+  margin-top: 20px;
+  text-align: center;
+  padding: 8px 6px 8px 10px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 20px;
+  align-self: center;
+}
+
+.number-label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.number-input {
+  display: inline-block;
+  justify-content: right;
+  width: 60px;
 }
 
 .event-container {
@@ -136,31 +163,6 @@ input[type="number"] {
 
 .description {
   overflow-x: hidden;
-}
-
-.number-container {
-  background-color: #fff;
-  width: 200px;
-  height: 40px;
-  margin-top: 20px;
-  text-align: center;
-  padding: 8px 6px 8px 10px;
-  outline: none;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
-  line-height: 20px;
-  align-self: center;
-}
-
-.number-label {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.number-input {
-  display: inline-block;
-  width: 40px;
 }
 
 .button-wrapper {
