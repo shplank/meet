@@ -14,9 +14,9 @@ class NumberOfEvents extends Component {
   render() {
     const {numberOfEvents} = this.state;
     return (
-      <div className="number-container"> 
-        <input 
-        placeholder="number of events"
+      <div className="number-container">
+        <label className="number-label">number of events:</label>
+        <input
         type="number" 
         className="number-input"
         value={numberOfEvents}
