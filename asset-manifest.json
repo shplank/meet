@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/meet/static/css/main.a210a399.chunk.css",
-    "main.js": "/meet/static/js/main.d83e9dd7.chunk.js",
-    "main.js.map": "/meet/static/js/main.d83e9dd7.chunk.js.map",
+    "main.css": "/meet/static/css/main.2e8559b2.chunk.css",
+    "main.js": "/meet/static/js/main.63fd5b96.chunk.js",
+    "main.js.map": "/meet/static/js/main.63fd5b96.chunk.js.map",
     "runtime-main.js": "/meet/static/js/runtime-main.6eb0aebf.js",
     "runtime-main.js.map": "/meet/static/js/runtime-main.6eb0aebf.js.map",
     "static/js/2.55499250.chunk.js": "/meet/static/js/2.55499250.chunk.js",
@@ -12,14 +12,15 @@
     "index.html": "/meet/index.html",
     "service-worker.js": "/meet/service-worker.js",
     "service-worker.js.map": "/meet/service-worker.js.map",
-    "static/css/main.a210a399.chunk.css.map": "/meet/static/css/main.a210a399.chunk.css.map",
+    "static/css/main.2e8559b2.chunk.css.map": "/meet/static/css/main.2e8559b2.chunk.css.map",
     "static/js/2.55499250.chunk.js.LICENSE.txt": "/meet/static/js/2.55499250.chunk.js.LICENSE.txt",
+    "static/media/MEETthin2.bdbe8845.png": "/meet/static/media/MEETthin2.bdbe8845.png",
     "static/media/App.css": "/meet/static/media/composite.572c0ff6.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6eb0aebf.js",
     "static/js/2.55499250.chunk.js",
-    "static/css/main.a210a399.chunk.css",
-    "static/js/main.d83e9dd7.chunk.js"
+    "static/css/main.2e8559b2.chunk.css",
+    "static/js/main.63fd5b96.chunk.js"
   ]
 }
