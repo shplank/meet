@@ -53,7 +53,7 @@ class App extends Component {
     const { locations, events, numberOfEvents } = this.state;
     return (
       <div className="App">
-        <img height="60px" src={logo} alt="Logo" />
+        <img height="100px" src={logo} alt="Logo" />
         <CitySearch locations={locations} updateEvents={this.updateEvents} />
         <NumberOfEvents numberOfEvents={numberOfEvents} updateNumberOfEvents={this.updateNumberOfEvents} />
         <EventList events={events} />
