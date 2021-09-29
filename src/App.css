@@ -36,12 +36,21 @@ p {
   display: block;
 }
 
-input[type="text"],
-input[type="number"] {
+input[type="text"] {
   padding: 8px 6px 8px 10px;
   border-radius: 4px;
   outline: none;
   border: 1px solid #ccc;
+  font-size: 14px;
+  line-height: 20px;
+  align-self: center;
+  height: 40px;
+}
+
+input[type="number"] {
+  padding: 8px 6px 8px 10px;
+  border-radius: 4px;
+  outline: none;
   font-size: 14px;
   line-height: 20px;
   align-self: center;
@@ -131,7 +140,7 @@ input[type="number"] {
 
 .number-container {
   background-color: #fff;
-  width: 250px;
+  width: 200px;
   height: 40px;
   margin-top: 20px;
   text-align: center;
@@ -151,7 +160,7 @@ input[type="number"] {
 
 .number-input {
   display: inline-block;
-  width: 100px;
+  width: 40px;
 }
 
 .button-wrapper {
