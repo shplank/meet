@@ -118,11 +118,9 @@ input[type="number"] {
   display: inline-block;
   padding: 8px 4px 8px 10px;
   background-color: #fff;
-  height: 38px;
   text-align: center;
   border-radius: 4px;
   outline: none;
-  border: 1px solid #ccc;
   font-size: 14px;
   line-height: 20px;
 }
@@ -134,7 +132,6 @@ input[type="number"] {
   align-self: center;
   border-radius: 4px;
   outline: none;
-  border: 1px solid #ccc;
 }
 
 .event-container {
