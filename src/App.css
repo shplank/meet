@@ -103,6 +103,7 @@ input[type="number"] {
   background-color: #fff;
   width: 180px;
   height: 40px;
+  justify-content: center;
   text-align: center;
   border: 1px solid #ccc;
   border-radius: 4px;
