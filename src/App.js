@@ -5,7 +5,7 @@ import EventList from './EventList';
 import CitySearch from './CitySearch';
 import NumberOfEvents from './NumberOfEvents';
 import { getEvents, extractLocations } from './api';
-import logo from './MEETthin2.png';
+import logo from './MEETthin.png';
 
 class App extends Component {
   state = {
@@ -20,10 +20,9 @@ class App extends Component {
     getEvents().then((events) => {
       if (this.mounted) {
         this.setState({ 
-          events: events,
+          events: events.slice(0, this.state.numberOfEvents),
           locations: extractLocations(events) });
-        this.updateEvents()
-      }
+      };
     });
   };
 
@@ -31,24 +30,23 @@ class App extends Component {
     this.mounted = false;
   }
 
-  updateEvents = (location, eventCount) => {
+  updateEvents = (location) => {
     getEvents().then((events) => {
       const locationEvents = (location === 'all') ?
         events :
         events.filter((event) => event.location === location);
-        locationEvents = locationEvents.slice(0, eventCount)
+      const { numberOfEvents } = this.state;
       this.setState({
-        events: locationEvents,
-        currentLocation: location
+        events: locationEvents.slice(0, numberOfEvents)
       });
     });
   };
 
   updateNumberOfEvents = (eventCount) => {
+    const { currentLocation } = this.state;
     this.setState({
       numberOfEvents: eventCount
     });
-    const { currentLocation } = this.state;
     this.updateEvents(currentLocation, eventCount);
   };
 
