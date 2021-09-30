@@ -20,7 +20,7 @@ body {
 }
 
 .logo {
-  margin: 30px auto;
+  margin: 20px auto;
 }
 
 ul {
@@ -123,6 +123,7 @@ input[type="number"] {
   padding: 8px 4px 8px 10px;
   background-color: #fff;
   text-align: center;
+  border-style: none;
   border-radius: 4px;
   outline: none;
   font-size: 14px;
