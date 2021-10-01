@@ -60,15 +60,6 @@ describe('<App /> integration', () => {
     expect(AppWrapper.state('events')).toEqual(allEvents);
     AppWrapper.unmount();
   });
-  test('app state numberOfEvents is set by component number of events', () => {
-    const AppWrapper = mount(<App />);
-    const NumberOfEventsWrapper = AppWrapper.find(NumberOfEvents);
-    const AppEventNumberState = AppWrapper.state('numberOfEvents');
-    expect(AppEventNumberState).not.toEqual(undefined);
-    NumberOfEventsWrapper.instance().handleNumberChange({target: {value: 20}});
-    expect(AppWrapper.state('numberOfEvents')).toEqual(20);
-    AppWrapper.unmount();
-  });
   test('number of events state passed from component to parent', () => {
     const AppWrapper = mount(<App />);
     const NumberOfEventsWrapper = AppWrapper.find(NumberOfEvents);

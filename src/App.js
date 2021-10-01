@@ -55,8 +55,8 @@ class App extends Component {
     return (
       <div className="App">
         <img height="60px" src={logo} alt="Logo" className="logo" />
-        <NumberOfEvents numberOfEvents={numberOfEvents} updateNumberOfEvents={this.updateNumberOfEvents} />
         <CitySearch locations={locations} updateEvents={this.updateEvents} />
+        <NumberOfEvents numberOfEvents={numberOfEvents} updateNumberOfEvents={this.updateNumberOfEvents} />
         <EventList events={events} />
       </div>
     );
