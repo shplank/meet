@@ -79,6 +79,22 @@ describe('<App /> integration', () => {
     expect(AppWrapper.state('locations')).toEqual(AppLocationsState);
     AppWrapper.unmount();
   });
+  test('numberOfEvents state retained on location state change', async () => {
+    const AppWrapper = mount(<App />);
+    const AppNumberOfEventsState = AppWrapper.state('numberOfEvents');
+    const CitySearchWrapper = AppWrapper.find(CitySearch);
+    const locations = extractLocations(mockData);
+    CitySearchWrapper.setState({ suggestions: locations });
+    const suggestions = CitySearchWrapper.state('suggestions');
+    const selectedIndex = Math.floor(Math.random() * (suggestions.length));
+    const selectedCity = suggestions[selectedIndex];
+    await CitySearchWrapper.instance().handleItemClicked(selectedCity);
+    const allEvents = await getEvents();
+    const eventsToShow = allEvents.filter(event => event.location === selectedCity);
+    expect(AppWrapper.state('events')).toEqual(eventsToShow);
+    expect(AppWrapper.state('numberOfEvents')).toEqual(AppNumberOfEventsState);
+    AppWrapper.unmount();
+  });
   test('returns correct results from mock data', () => {
     const AppWrapper = mount(<App />);
     AppWrapper.setState({
