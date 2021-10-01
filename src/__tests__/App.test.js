@@ -69,6 +69,16 @@ describe('<App /> integration', () => {
     expect(AppWrapper.state('numberOfEvents')).toEqual(1);
     AppWrapper.unmount();
   });
+  test('location state retained on numberOfEvents state change', () => {
+    const AppWrapper = mount(<App />);
+    const AppLocationsState = AppWrapper.state('locations');
+    const NumberOfEventsWrapper = AppWrapper.find(NumberOfEvents);
+    const AppNumberOfEventsState = AppWrapper.state('numberOfEvents');
+    expect(AppNumberOfEventsState).not.toEqual(undefined);
+    NumberOfEventsWrapper.instance().handleNumberChange({target: {value: 1}});
+    expect(AppWrapper.state('locations')).toEqual(AppLocationsState);
+    AppWrapper.unmount();
+  });
   test('returns correct results from mock data', () => {
     const AppWrapper = mount(<App />);
     AppWrapper.setState({
