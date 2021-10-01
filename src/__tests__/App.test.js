@@ -69,4 +69,21 @@ describe('<App /> integration', () => {
     expect(AppWrapper.state('numberOfEvents')).toEqual(20);
     AppWrapper.unmount();
   });
+  test('number of events state passed from component to parent', () => {
+    const AppWrapper = mount(<App />);
+    const NumberOfEventsWrapper = AppWrapper.find(NumberOfEvents);
+    const AppNumberOfEventsState = AppWrapper.state('numberOfEvents');
+    expect(AppNumberOfEventsState).not.toEqual(undefined);
+    NumberOfEventsWrapper.instance().handleNumberChange({target: {value: 1}});
+    expect(AppWrapper.state('numberOfEvents')).toEqual(1);
+    AppWrapper.unmount();
+  });
+  test('returns correct results from mock data', () => {
+    const AppWrapper = mount(<App />);
+    AppWrapper.setState({
+      events: mockData
+      });
+      expect(AppWrapper.state('events','numberOfEvents')).toHaveLength(mockData.length);
+    AppWrapper.unmount();
+  });
 });

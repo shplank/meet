@@ -14,12 +14,4 @@ describe('<NumberOfEvents /> component', () => {
     expect(NumberOfEventsWrapper.find('.number-input')).toHaveLength(1); 
     expect(NumberOfEventsWrapper.state('numberOfEvents')).toBe(32);
   });
-//  test('change state when text input changes', () => {
-//    NumberOfEventsWrapper.setState({
-//      numberOfEvents: 32
-//    });
-//    const eventObject = { target: { value: 20 }};
-//    NumberOfEventsWrapper.find('.number-input').simulate('change', eventObject);
-//    expect(NumberOfEventsWrapper.state('numberOfEvents')).toBe(20);
-//  });
 });
