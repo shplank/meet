@@ -8,17 +8,17 @@ FEATURE 1: FILTER EVENTS BY CITY
 
 "As a user, I should be able to choose from a list of cities to see events happening in a specified city."
 
-Scenario 1: When user hasn’t searched for a city, show upcoming events from all cities.
+Scenario 1: When user hasn’t searched for a city, show upcoming events from all cities
 Given user hasn’t searched for any city
 When the user opens the app
 Then the user should see a list of upcoming events
 
-Scenario 2: User should see a list of suggestions when they search for a city.
+Scenario 2: User should see a list of suggestions when they search for a city
 Given the main page is open
 When the user starts typing in the city textbox
-Then the user should receive a list of cities (suggestions) that match what they’ve typed
+Then the user should receive a list of city suggestions that match what they’ve typed
 
-Scenario 3: User can select a city from the suggested list.
+Scenario 3: User can select a city from the suggested list
 Given user was typing “Berlin” in the city textbox
 And the list of suggested cities is showing
 When the user selects a city (e.g., “Berlin, Germany”) from the list
