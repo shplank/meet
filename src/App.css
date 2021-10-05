@@ -211,60 +211,50 @@ input[type="number"] {
 @keyframes slideIn {
   from {
     margin-left: 100%;
-    width: 300%;
   }
 
   to {
-    margin-left: 0%;
-    width: 100%;
+    margin-left: 20%;
   }
 }
 
 @-moz-keyframes slideIn {
   from {
     margin-left: 100%;
-    width: 300%;
   }
 
   to {
-    margin-left: 0%;
-    width: 100%;
+    margin-left: 20%;
   }
 }
 
 @-webkit-keyframes slideIn {
   from {
     margin-left: 100%;
-    width: 300%;
   }
 
   to {
-    margin-left: 0%;
-    width: 100%;
+    margin-left: 20%;
   }
 }
 
 @-o-keyframes slideIn {
   from {
     margin-left: 100%;
-    width: 300%;
   }
 
   to {
-    margin-left: 0%;
-    width: 100%;
+    margin-left: 20%;
   }
 }
 
 @-ms-keyframes slideIn {
   from {
     margin-left: 100%;
-    width: 300%;
   }
 
   to {
-    margin-left: 0%;
-    width: 100%;
+    margin-left: 20%;
   }
 }
 
