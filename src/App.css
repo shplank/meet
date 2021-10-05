@@ -89,7 +89,7 @@ input[type="number"] {
 .suggestions > li {
   text-align: left;
   padding: 8px 6px 8px 10px;
-  background-color: #eee;
+  background-color: #dde;
   cursor: default;
 }
 
@@ -99,7 +99,7 @@ input[type="number"] {
 }
 
 .suggestions > li:hover {
-  background-color: #bccceb;
+  background-color: #dde;
 }
 
 .number-container {
@@ -202,7 +202,7 @@ input[type="number"] {
 
 .details-btn {
   position: absolute;
-  background-color: #ddd;
+  background-color: #dde;
   right: 5px;
   bottom: 5px;
   padding: 5px 8px;
