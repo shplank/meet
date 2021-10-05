@@ -155,6 +155,14 @@ input[type="number"] {
   -ms-animation: fadeIn 1s;
 }
 
+.event-description {
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
