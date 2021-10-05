@@ -140,7 +140,7 @@ input[type="number"] {
   outline: none;
 }
 
-.event {
+.event-container {
   background-color: #fff;
   padding: 10px 10px 35px;
   margin: 10px 5%;
