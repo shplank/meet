@@ -150,11 +150,11 @@ input[type="number"] {
   position: relative;
   transform: translateY(200%);
   opacity: 0;
-  animation: slideIn 1s ease-out forwards;
-  -webkit-animation: slideIn 1s ease-out forwards;
-  -moz-animation: slideIn 1s ease-out forwards;
-  -o-animation: slideIn 1s ease-out forwards;
-  -ms-animation: slideIn 1s ease-out forwards;
+  animation: slideIn 0.6s ease-out forwards;
+  -webkit-animation: slideIn 0.6s ease-out forwards;
+  -moz-animation: slideIn 0.6s ease-out forwards;
+  -o-animation: slideIn 0.6s ease-out forwards;
+  -ms-animation: slideIn 0.6s ease-out forwards;
 }
 
 @keyframes slideIn {
@@ -204,6 +204,60 @@ input[type="number"] {
   100% {
     opacity: 1;
     transform: translateY(0%);
+  }
+}
+
+.event-description {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  -webkit-animation: fadeIn 1s forwards;
+  -moz-animation: fadeIn 1s forwards;
+  -o-animation: fadeIn 1s forwards;
+  -ms-animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
