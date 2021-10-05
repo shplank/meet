@@ -22,7 +22,7 @@ describe('show/hide an event details', () => {
 
   test('An event element is collapsed by default', async () => {
     const eventDetails = await page.$('.event-container .event-description');
-    expect(eventDetails).toHaveLength(0);
+    expect(eventDetails).toBeNull();
   });
 
   test('User can expand an event to see its details', async () => {

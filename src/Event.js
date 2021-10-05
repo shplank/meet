@@ -23,7 +23,7 @@ class Event extends Component {
 
   eventDetails(event) {
     if(this.state.showDetails === false) {
-     return ""
+     return null
     } else {
       return event.description;
     }

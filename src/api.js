@@ -2,6 +2,8 @@ import axios from 'axios';
 import NProgress from 'nprogress';
 import { mockData } from './mock-data';
 
+NProgress.configure({ showSpinner: false });
+
 const removeQuery = () => {
   if (window.history.pushState && window.location.pathname) {
     var newurl =

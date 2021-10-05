@@ -148,16 +148,11 @@ input[type="number"] {
   border: 2px solid #222;
   border-radius: 5px;
   position: relative;
-  animation: fadeIn 1s;
-  -webkit-animation: fadeIn 1s;
-  -moz-animation: fadeIn 1s;
-  -o-animation: fadeIn 1s;
-  -ms-animation: fadeIn 1s;
-  animation: fadeOut 1s;
-  -webkit-animation: fadeOut 1s;
-  -moz-animation: fadeOut 1s;
-  -o-animation: fadeOut 1s;
-  -ms-animation: fadeOut 1s;
+  animation: fadeIn 1s, slideIn 1s;
+  -webkit-animation: fadeIn 1s, slideIn 1s;
+  -moz-animation: fadeIn 1s, slideIn 1s;
+  -o-animation: fadeIn 1s, slideIn 1s;
+  -ms-animation: fadeIn 1s, slideIn 1s;
 }
 
 .event-description {
@@ -166,11 +161,6 @@ input[type="number"] {
   -moz-animation: fadeIn 1s;
   -o-animation: fadeIn 1s;
   -ms-animation: fadeIn 1s;
-  animation: fadeOut 1s;
-  -webkit-animation: fadeOut 1s;
-  -moz-animation: fadeOut 1s;
-  -o-animation: fadeOut 1s;
-  -ms-animation: fadeOut 1s;
 }
 
 @keyframes fadeIn {
@@ -218,48 +208,63 @@ input[type="number"] {
   }
 }
 
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
+@keyframes slideIn {
+  from {
+    margin-left: 100%;
+    width: 300%;
   }
-  100% {
-    opacity: 0;
+
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }
 
-@-moz-keyframes fadeOut {
-  0% {
-    opacity: 1;
+@-moz-keyframes slideIn {
+  from {
+    margin-left: 100%;
+    width: 300%;
   }
-  100% {
-    opacity: 0;
+
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }
 
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1;
+@-webkit-keyframes slideIn {
+  from {
+    margin-left: 100%;
+    width: 300%;
   }
-  100% {
-    opacity: 0;
+
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }
 
-@-o-keyframes fadeOut {
-  0% {
-    opacity: 1;
+@-o-keyframes slideIn {
+  from {
+    margin-left: 100%;
+    width: 300%;
   }
-  100% {
-    opacity: 0;
+
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }
 
-@-ms-keyframes fadeOut {
-  0% {
-    opacity: 1;
+@-ms-keyframes slideIn {
+  from {
+    margin-left: 100%;
+    width: 300%;
   }
-  100% {
-    opacity: 0;
+
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }
 
