@@ -301,7 +301,10 @@ input[type="number"] {
 
 .Alert {
   position: fixed;
-  top: 20px;
+  top: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
 }
 
 .data-vis-wrapper {
