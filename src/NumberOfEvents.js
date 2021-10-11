@@ -24,14 +24,18 @@ class NumberOfEvents extends Component {
   render() {
     const {numberOfEvents} = this.state;
     return (
-      <div className="number-container">
-        <label className="number-label">number of events:</label>
-        <input
-          type="number" 
-          className="number-input"
-          value={numberOfEvents}
-          onChange={this.handleNumberChange} />
-        <ErrorAlert text={this.state.infoText} />
+      <div>
+        <div>
+          <ErrorAlert text={this.state.infoText} />
+        </div>
+        <div className="number-container">
+          <label className="number-label">number of events:</label>
+          <input
+            type="number" 
+            className="number-input"
+            value={numberOfEvents}
+            onChange={this.handleNumberChange} />
+        </div>
       </div>
     );
   }

@@ -73,7 +73,7 @@ input[type="number"] {
 }
 
 .city {
-  width: 270px;
+  width: 250px;
 }
 
 .CitySearch {
@@ -382,7 +382,7 @@ input[type="number"] {
 
 @media only screen and (min-width: 992px) {
   .Settings {
-    margin: 10px 35%;
+    margin: 10px 40%;
   }
   .event-container {
     margin: 10px 20%;
