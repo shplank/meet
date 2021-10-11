@@ -26,7 +26,7 @@ class InfoAlert extends Alert {
     super(props);
     this.color = 'blue';
     this.backgroundColor = 'light';
-    this.border = none;
+    this.border = 'none';
     this.borderRadius = '4px';
   }
 }
