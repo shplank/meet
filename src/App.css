@@ -32,10 +32,6 @@ body {
   position: relative;
 }
 
-.alert-space {
-  height: 22px;
-}
-
 .logo {
   margin: 0px auto;
 }
@@ -94,7 +90,6 @@ input[type="number"] {
 .CitySearch {
   display: flex;
   flex-direction: column;
-  flex-basis: 75px;
   max-width: 300px;
   margin: auto;
   position: relative;
@@ -125,13 +120,6 @@ input[type="number"] {
 
 .suggestions > li:hover {
   background-color: #bcc;
-}
-
-.events {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 75px;
-  position: relative;
 }
 
 .number-container {
