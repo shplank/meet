@@ -40,7 +40,7 @@ class CitySearch extends Component {
   render() {
     return (
       <div className="CitySearch">
-        <div>
+        <div className="alert-space">
           <InfoAlert text={this.state.infoText} />
         </div>
         <input
