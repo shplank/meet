@@ -43,6 +43,7 @@ class CitySearch extends Component {
         <div className="alert-space">
           <InfoAlert text={this.state.infoText} />
         </div>
+        <br />
         <div>
           <input
             placeholder="choose a city"
