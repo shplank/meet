@@ -25,7 +25,7 @@ class NumberOfEvents extends Component {
     const {numberOfEvents} = this.state;
     return (
       <div>
-        <div>
+        <div className="alert-space">
           <ErrorAlert text={this.state.infoText} />
         </div>
         <div className="number-container">

@@ -29,8 +29,12 @@ body {
   text-align: center;
 }
 
+.alert-space {
+  height: 40px;
+}
+
 .logo {
-  margin: 0px auto 20px;
+  margin: 0px auto;
 }
 
 ul {
@@ -63,8 +67,8 @@ input[type="text"] {
 
 input[type="number"] {
   padding: 8px 6px 8px 10px;
-  border-style: none;
-  border-radius: 4px;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
   outline: none;
   font-size: 14px;
   line-height: 20px;
@@ -124,7 +128,7 @@ input[type="number"] {
   outline: none;
   align-self: center;
   justify-content: center;
-  margin: 20px auto 0;
+  margin: auto;
   position: relative;
 }
 
@@ -215,6 +219,10 @@ input[type="number"] {
     opacity: 1;
     transform: translateY(0%);
   }
+}
+
+.event-title {
+  font-size: 24;
 }
 
 .event-description {
@@ -382,10 +390,13 @@ input[type="number"] {
 
 @media only screen and (min-width: 992px) {
   .Settings {
-    margin: 10px 40%;
+    margin: 10px 35%;
   }
   .event-container {
     margin: 10px 20%;
+  }
+  .event-title {
+    font-size: 32;
   }
   .data-vis-wrapper {
     flex-direction: row;
