@@ -4,6 +4,7 @@ import './nprogress.css';
 import EventList from './EventList';
 import CitySearch from './CitySearch';
 import NumberOfEvents from './NumberOfEvents';
+import { WarningAlert } from './Alert';
 import { getEvents, extractLocations } from './api';
 import logo from './MEETthin.png';
 
@@ -57,7 +58,8 @@ class App extends Component {
     return (
       <div className="App">
         <div className="Settings">
-        <img height="60px" src={logo} alt="Logo" className="logo" />
+          <img height="60px" src={logo} alt="Logo" className="logo" />
+          { !navigator.onLine ? (<WarningAlert text='Data limited while offline' />) : (<WarningAlert text=' ' />)}
           <CitySearch locations={locations} updateEvents={this.updateEvents} />
           <NumberOfEvents numberOfEvents={numberOfEvents} updateNumberOfEvents={this.updateNumberOfEvents} />
         </div>
