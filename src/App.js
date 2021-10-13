@@ -24,6 +24,12 @@ class App extends Component {
           events: events.slice(0, this.state.numberOfEvents),
           locations: extractLocations(events) });
       };
+      if (!navigator.onLine) {
+        this.setState({infoText: <p className="offline-alert">'Data limited while offline'</p>});
+        console.log("user offline");
+      } else {
+        this.setState({ infoText: '' });
+      };
     });
   };
 
@@ -59,7 +65,7 @@ class App extends Component {
       <div className="App">
         <div className="Settings">
           <img height="60px" src={logo} alt="Logo" className="logo" />
-          { !navigator.onLine ? (<WarningAlert text='Data limited while offline' />) : (<WarningAlert text=' ' />)}
+          <WarningAlert text={this.state.infoText} />
           <CitySearch locations={locations} updateEvents={this.updateEvents} />
           <NumberOfEvents numberOfEvents={numberOfEvents} updateNumberOfEvents={this.updateNumberOfEvents} />
         </div>
