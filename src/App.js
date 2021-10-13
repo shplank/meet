@@ -25,10 +25,10 @@ class App extends Component {
           locations: extractLocations(events) });
       };
       if (!navigator.onLine) {
-        this.setState({infoText: <p className="offline-alert">'Data limited while offline'</p>});
+        this.setState({infoText: <p className="offline-alert">You are currently offline;<br/>results may be limited</p>});
         console.log("user offline");
       } else {
-        this.setState({ infoText: '' });
+        this.setState({ infoText: ''});
       };
     });
   };
