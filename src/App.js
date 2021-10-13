@@ -64,7 +64,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="Settings">
-          <img height="60px" src={logo} alt="Logo" className="logo" />
+          <img width="100px" height="45px" src={logo} alt="Logo" className="logo" />
           <WarningAlert text={this.state.infoText} />
           <CitySearch locations={locations} updateEvents={this.updateEvents} />
           <NumberOfEvents numberOfEvents={numberOfEvents} updateNumberOfEvents={this.updateNumberOfEvents} />
