@@ -1,12 +1,14 @@
 import React from "react";
 import './WelcomeScreen.css';
+import logo from './MEETthin.png';
 
 function WelcomeScreen(props) {
   return props.showWelcomeScreen ?
   (
   <div className="WelcomeScreen">
-    <h1>Welcome to the Meet app</h1>
-    <h4>Log in to see upcoming events around the world for full-stack developers</h4>
+    <h1>Welcome to</h1>
+    <img width="200px" height="90px" src={logo} alt="Logo" className="logo" />
+    <h4>Log in to see upcoming<br/>events around the world<br/>for full-stack developers</h4>
     <div className="button_cont" align="center">
       <div class="google-btn">
         <div class="google-icon-wrapper">
