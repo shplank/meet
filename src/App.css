@@ -93,7 +93,7 @@ input[type="number"] {
   display: flex;
   flex-direction: column;
   max-width: 300px;
-  margin: auto;
+  margin: 0 auto;
   position: relative;
 }
 
