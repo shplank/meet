@@ -70,6 +70,22 @@ input[type="text"] {
   height: 38px;
 }
 
+input[type="text"]:focus::placeholder {
+  color: transparent;
+}
+input[type="text"]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input[type="text"]:focus:-moz-placeholder {
+  color: transparent;
+} /* FF 4-18 */
+input[type="text"]:focus::-moz-placeholder {
+  color: transparent;
+} /* FF 19+ */
+input[type="text"]:focus:-ms-input-placeholder {
+  color: transparent;
+} /* IE 10+ */
+
 input[type="number"] {
   padding: 8px 6px 8px 10px;
   border-top-left-radius: 0px;
@@ -99,11 +115,11 @@ input[type="number"] {
 
 .suggestions {
   width: 250px;
-  position: absolute;
+  position: relative;
   z-index: 2;
   align-self: center;
   margin: 0;
-  top: 50px;
+  top: 60px;
   font-size: 14px;
   box-shadow: 10px 10px 16px -12px rgba(0, 0, 0, 0.75);
 }
