@@ -183,6 +183,7 @@ input[type="number"] {
   flex-flow: column nowrap;
   align-items: center;
   width: 100%;
+  margin: 0 auto;
 }
 
 .event {
@@ -442,7 +443,7 @@ input[type="number"] {
   }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 500px) and (max-width: 991px) {
   .event-container {
     width: 450px;
   }
