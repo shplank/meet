@@ -1,6 +1,7 @@
 .WelcomeScreen {
   position: fixed;
   align-items: center;
+  text-align: center;
   width: 90%;
   height: 400px;
   top: 0;
