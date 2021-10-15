@@ -178,6 +178,10 @@ input[type="number"] {
   outline: none;
 }
 
+.EventList {
+  margin: 10px 5%;
+}
+
 .event-container {
   background-color: #fff;
   padding: 10px 10px 35px;
@@ -411,9 +415,12 @@ input[type="number"] {
   .Settings {
     margin: 10px 35%;
   }
-  .event-container {
+  .EventList {
     margin: 10px 20%;
     width: 60%;
+  }
+  .event-container {
+    margin: 10px 20%;
   }
   h1 {
     font-size: 32;
