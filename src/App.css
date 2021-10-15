@@ -425,6 +425,9 @@ input[type="number"] {
   .event {
     margin: 10px 20%;
   }
+  .event-container {
+    width: 800px;
+  }
   h1 {
     font-size: 32;
   }
@@ -436,5 +439,11 @@ input[type="number"] {
     max-width: 50%;
     min-width: auto;
     margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .event-container {
+    width: 450px;
   }
 }
