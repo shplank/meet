@@ -182,14 +182,15 @@ input[type="number"] {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  width: 100%;
+}
+
+.event {
   margin: 10px 5%;
 }
 
 .event-container {
   background-color: #fff;
   padding: 10px 10px 35px;
-  margin: 10px 5%;
   text-align: left;
   border: 2px solid #222;
   border-radius: 5px;
@@ -419,11 +420,7 @@ input[type="number"] {
   .Settings {
     margin: 10px 35%;
   }
-  .EventList {
-    margin: 10px 20%;
-    width: 100%;
-  }
-  .event-container {
+  .event {
     margin: 10px 20%;
   }
   h1 {
