@@ -18,7 +18,7 @@ const removeQuery = () => {
   }
 };
 
-export const checkToken = async (accessToken) => {
+const checkToken = async (accessToken) => {
   const result = await fetch(
     `https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=${accessToken}`
   )
@@ -33,13 +33,13 @@ export const checkToken = async (accessToken) => {
  * It will also remove all duplicates by creating another new array using the spread operator and spreading a Set.
  * The Set will remove all duplicates from the array.
  */
-export const extractLocations = (events) => {
+const extractLocations = (events) => {
   var extractLocations = events.map((event) => event.location);
   var locations = [...new Set(extractLocations)];
   return locations;
 };
 
-export const getEvents = async () => {
+const getEvents = async () => {
   NProgress.start();
 
   if (window.location.href.startsWith("http://localhost")) {
@@ -69,7 +69,7 @@ export const getEvents = async () => {
   }
 };
 
-export const getAccessToken = async () => {
+const getAccessToken = async () => {
   const accessToken = localStorage.getItem('access_token');
   const tokenCheck = accessToken && (await checkToken(accessToken));
 
@@ -103,3 +103,5 @@ const getToken = async (code) => {
 
   return access_token;
 };
+
+export { getEvents, getAccessToken, extractLocations, getToken, checkToken };
