@@ -7,6 +7,7 @@ import NumberOfEvents from './NumberOfEvents';
 import WelcomeScreen from './WelcomeScreen';
 import { WarningAlert } from './Alert';
 import { getEvents, extractLocations, checkToken, getAccessToken } from './api';
+import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import logo from './MEETthin.png';
 
 class App extends Component {
@@ -68,6 +69,16 @@ class App extends Component {
     this.updateEvents(currentLocation, eventCount);
   };
 
+  getData = () => {
+    const {locations, events} = this.state;
+    const data = locations.map((location)=>{
+      const number = events.filter((event) => event.location === location).length
+      const city = location.split(', ').shift()
+      return {city, number};
+    })
+    return data;
+  };
+
   render() {
     const { locations, events, numberOfEvents, showWelcomeScreen } = this.state;
     if (showWelcomeScreen === undefined) 
@@ -80,6 +91,18 @@ class App extends Component {
           <CitySearch locations={locations} updateEvents={this.updateEvents} />
           <NumberOfEvents numberOfEvents={numberOfEvents} updateNumberOfEvents={this.updateNumberOfEvents} />
         </div>
+        <h4>Events in each city</h4>
+         <ScatterChart 
+          width={800}
+          height={400}
+          margin={{ top: 20, right: 20, bottom: 20, left: 20, }}
+          >
+          <CartesianGrid />
+          <XAxis type="category" dataKey="city" name="city" />
+          <YAxis type="number" dataKey="number" name="number of events" allowDecimals={false} />
+          <Tooltip cursor={{ strokeDasharray: '3 3' }} />
+          <Scatter data={this.getData()} fill="#8884d8" />
+        </ScatterChart>
         <EventList events={events} />
         <WelcomeScreen showWelcomeScreen={showWelcomeScreen} getAccessToken={() => { getAccessToken() }} />
       </div>
