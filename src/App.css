@@ -439,7 +439,7 @@ input[type="number"] {
     font-size: 32;
   }
   .data-vis-wrapper .recharts-responsive-container {
-    width: 80%;
+    max-width: 80%;
     min-width: auto;
     margin: 0 auto;
   }
