@@ -1,4 +1,7 @@
 .WelcomeScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: fixed;
   align-items: center;
   text-align: center;
