@@ -5,6 +5,7 @@ import EventList from './EventList';
 import CitySearch from './CitySearch';
 import NumberOfEvents from './NumberOfEvents';
 import WelcomeScreen from './WelcomeScreen';
+import EventGenre from "./EventGenre";
 import { WarningAlert } from './Alert';
 import { getEvents, extractLocations, checkToken, getAccessToken } from './api';
 import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
@@ -92,6 +93,7 @@ class App extends Component {
           <NumberOfEvents numberOfEvents={numberOfEvents} updateNumberOfEvents={this.updateNumberOfEvents} />
         </div>
         <div className="data-vis-wrapper">
+          <EventGenre events={events} />
           <p>Events in each city:</p>
           <ResponsiveContainer height={200}>
             <ScatterChart margin={{ top: 20, right: 20, bottom: 20, left: 10, }}>

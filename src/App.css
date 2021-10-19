@@ -360,6 +360,7 @@ input[type="number"] {
   flex-direction: column;
   width: 100%;
   align-items: center;
+  margin: 10px auto;
   background-color: #fff;
   border: 2px solid #222;
   border-radius: 5px;
@@ -441,7 +442,6 @@ input[type="number"] {
   .data-vis-wrapper .recharts-responsive-container {
     max-width: 80%;
     min-width: auto;
-    margin: 0 auto;
   }
 }
 
@@ -452,6 +452,5 @@ input[type="number"] {
   .data-vis-wrapper .recharts-responsive-container {
     width: 100%;
     min-width: auto;
-    margin: 0 auto;
   }
 }
