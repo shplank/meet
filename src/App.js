@@ -91,7 +91,8 @@ class App extends Component {
           <CitySearch locations={locations} updateEvents={this.updateEvents} />
           <NumberOfEvents numberOfEvents={numberOfEvents} updateNumberOfEvents={this.updateNumberOfEvents} />
         </div>
-        <h4>Events in each city:</h4>
+        <div className="data-vis-wrapper">
+          <h4>Events in each city:</h4>
           <ResponsiveContainer height={400}>
             <ScatterChart margin={{ top: 20, right: 20, bottom: 20, left: 20, }}>
               <CartesianGrid />
@@ -101,6 +102,7 @@ class App extends Component {
               <Scatter data={this.getData()} fill="red" />
             </ScatterChart>
           </ResponsiveContainer>
+        </div>
         <EventList events={events} />
         <WelcomeScreen showWelcomeScreen={showWelcomeScreen} getAccessToken={() => { getAccessToken() }} />
       </div>
