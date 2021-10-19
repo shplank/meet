@@ -368,6 +368,7 @@ input[type="number"] {
   min-width: 100%;
   display: flex;
 }
+
 .recharts-surface {
   overflow: visible;
 }
@@ -436,12 +437,8 @@ input[type="number"] {
   h1 {
     font-size: 32;
   }
-  .data-vis-wrapper {
-    flex-direction: row;
-  }
   .data-vis-wrapper .recharts-responsive-container {
-    flex-basis: 50%;
-    max-width: 50%;
+    width: 850px;
     min-width: auto;
     margin: 0 auto;
   }
@@ -450,5 +447,10 @@ input[type="number"] {
 @media screen and (min-width: 500px) and (max-width: 991px) {
   .event-container {
     width: 450px;
+  }
+  .data-vis-wrapper .recharts-responsive-container {
+    width: 450px;
+    min-width: auto;
+    margin: 0 auto;
   }
 }

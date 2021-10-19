@@ -92,7 +92,7 @@ class App extends Component {
           <NumberOfEvents numberOfEvents={numberOfEvents} updateNumberOfEvents={this.updateNumberOfEvents} />
         </div>
         <div className="data-vis-wrapper">
-          <h4>Events in each city:</h4>
+          <p>Events in each city:</p>
           <ResponsiveContainer height={400}>
             <ScatterChart margin={{ top: 20, right: 20, bottom: 20, left: 20, }}>
               <CartesianGrid />
