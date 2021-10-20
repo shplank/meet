@@ -24,9 +24,9 @@ function WelcomeScreen(props) {
           </button>
         </div>
       </div>
-      <a href="https://shplank.github.io/meet/privacy.html" 
+      <a href="https://shplank.github.io/meet/privacy.html" alt="privacy policy"
         rel="nofollow noopener" >
-        Privacy policy
+        Privacy Policy/Limited Use Disclosure
       </a>
     </div>
   </div>
