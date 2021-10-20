@@ -88,6 +88,10 @@
   text-align: right;
 }
 
+.privacy-text {
+  margin: 5px 20px;
+}
+
 @media only screen and (min-width: 992px) {
   .WelcomeScreen {
     margin: 20px auto;
