@@ -197,7 +197,7 @@ input[type="number"] {
 }
 
 .data-vis-wrapper .recharts-responsive-container {
-  min-width: 100%;
+  width: 90%;
   display: flex;
 }
 
@@ -388,7 +388,7 @@ input[type="number"] {
   h1 {
     font-size: 32;
   }
-  .data-vis-wrapper .recharts-responsive-container {
+  .data-vis-wrapper {
     width: 850px;
   }
 }
@@ -397,7 +397,7 @@ input[type="number"] {
   .event-container {
     width: 450px;
   }
-  .data-vis-wrapper .recharts-responsive-container {
+  .data-vis-wrapper {
     width: 450px;
   }
 }
