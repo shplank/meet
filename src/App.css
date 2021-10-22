@@ -389,7 +389,7 @@ input[type="number"] {
     font-size: 32;
   }
   .data-vis-wrapper {
-    width: 850px;
+    width: 400px;
   }
 }
 
@@ -398,6 +398,6 @@ input[type="number"] {
     width: 450px;
   }
   .data-vis-wrapper {
-    width: 450px;
+    width: 400px;
   }
 }
