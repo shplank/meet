@@ -24,10 +24,9 @@ function WelcomeScreen(props) {
           </button>
         </div>
       </div>
-      <p className="privacy-text">This site is used specifically for education purposes and has no commercial intent or use. No personal data is collected, saved, or shared at any stage. The calendar accessed is not a personal calendar, but one created specifically for the project to provide sample content to the user. This app complies with the Google API Services User Data Policy, including the Limited Use requirements.</p>
       <a href="https://shplank.github.io/meet/privacy.html" alt="privacy policy"
         rel="nofollow noopener" >
-        Privacy Policy/Limited Use Disclosure
+        Privacy Policy
       </a>
     </div>
   </div>
