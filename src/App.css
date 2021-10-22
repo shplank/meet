@@ -12,6 +12,7 @@ body {
 .App {
   display: flex;
   flex-flow: column nowrap;
+  justify-self: center;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -178,6 +179,34 @@ input[type="number"] {
   outline: none;
 }
 
+.Alert {
+  position: relative;
+  top: 10px;
+  padding: 0 8px;
+}
+
+.data-vis-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin: 10px auto;
+  background-color: #fff;
+  border: 2px solid #222;
+  border-radius: 5px;
+}
+
+.data-vis-wrapper .recharts-responsive-container {
+  min-width: 100%;
+  display: flex;
+}
+
+.recharts-surface {
+  overflow: visible;
+}
+
+/* Below is styling for the list of events */
+
 .EventList {
   display: flex;
   flex-flow: column nowrap;
@@ -257,60 +286,6 @@ input[type="number"] {
   }
 }
 
-.event-description {
-  opacity: 0;
-  animation: fadeIn 1s forwards;
-  -webkit-animation: fadeIn 1s forwards;
-  -moz-animation: fadeIn 1s forwards;
-  -o-animation: fadeIn 1s forwards;
-  -ms-animation: fadeIn 1s forwards;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .details-btn {
   position: absolute;
   background-color: #dee;
@@ -347,32 +322,6 @@ input[type="number"] {
   grid-gap: 20px;
   padding: 20px;
   font-family: sans-serif;
-}
-
-.Alert {
-  position: relative;
-  top: 10px;
-  padding: 0 8px;
-}
-
-.data-vis-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  margin: 10px auto;
-  background-color: #fff;
-  border: 2px solid #222;
-  border-radius: 5px;
-}
-
-.data-vis-wrapper .recharts-responsive-container {
-  min-width: 100%;
-  display: flex;
-}
-
-.recharts-surface {
-  overflow: visible;
 }
 
 .login-button {
@@ -440,8 +389,7 @@ input[type="number"] {
     font-size: 32;
   }
   .data-vis-wrapper .recharts-responsive-container {
-    max-width: 80%;
-    min-width: auto;
+    width: 850px;
   }
 }
 
@@ -450,7 +398,6 @@ input[type="number"] {
     width: 450px;
   }
   .data-vis-wrapper .recharts-responsive-container {
-    width: 100%;
-    min-width: auto;
+    width: 450px;
   }
 }
