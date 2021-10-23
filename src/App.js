@@ -94,9 +94,8 @@ class App extends Component {
         </div>
         <div className="data-vis-wrapper">
           <EventGenre events={events} />
-          <ResponsiveContainer width={300} height={500}>
-            <p>Events in each city:</p>
-            <ScatterChart margin={{ top: 20, right: 20, bottom: 20, left: 10, }}>
+          <ResponsiveContainer>
+            <ScatterChart width={300} height={500} margin={{ top: 20, right: 20, bottom: 20, left: 10, }}>
               <CartesianGrid />
               <XAxis type="number" dataKey="number" name="# of events" allowDecimals={false} />
               <YAxis type="category" dataKey="city" name="city" />
