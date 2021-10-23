@@ -205,6 +205,10 @@ input[type="number"] {
   overflow: visible;
 }
 
+.recharts-layer .recharts-cartesian-axis .recharts-yAxis .yAxis {
+  width: 120px;
+}
+
 /* Below is styling for the list of events */
 
 .EventList {
@@ -377,6 +381,7 @@ input[type="number"] {
 
 @media only screen and (min-width: 992px) {
   .Settings {
+    flex-flow: row;
     margin: 10px 35%;
   }
   .event {
