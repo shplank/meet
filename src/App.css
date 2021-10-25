@@ -207,12 +207,17 @@ input[type="number"] {
   display: flex;
 }
 
-.recharts-surface {
-  overflow: visible;
+.data-description {
+  padding: 10px;
 }
 
-.recharts-layer .recharts-cartesian-axis .recharts-yAxis .yAxis {
-  width: 120px;
+.data-desc-pie {
+  flex-direction: column;
+}
+
+.recharts-surface {
+  overflow: visible;
+  white-space: nowrap;
 }
 
 /* Below is styling for the list of events */

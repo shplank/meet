@@ -93,11 +93,14 @@ class App extends Component {
           <NumberOfEvents numberOfEvents={numberOfEvents} updateNumberOfEvents={this.updateNumberOfEvents} />
         </div>
         <div className="data-vis-wrapper">
-          <EventGenre events={events} />
+          <div className="data-desc-pie">
+            <p className="data-description">The pie chart below shows a breakdown of events by coding language; the scatter chart shows the number of events in each city.</p>
+            <EventGenre events={events} />
+          </div>
           <ResponsiveContainer height={500}>
             <ScatterChart width={300} height={480} margin={{ top: 10, right: 20, bottom: 10, left: 10, }}>
               <CartesianGrid />
-              <XAxis type="number" dataKey="number" name="# of events" allowDecimals={false} />
+              <XAxis type="number" dataKey="number" name="number of events" allowDecimals={false} />
               <YAxis type="category" dataKey="city" name="city" />
               <Tooltip cursor={{ strokeDasharray: '3 3' }} />
               <Scatter data={this.getData()} fill="blue" />
