@@ -213,7 +213,6 @@ input[type="number"] {
 
 .recharts-surface {
   overflow: visible;
-  padding-left: 30px;
   white-space: nowrap;
 }
 
@@ -416,7 +415,7 @@ input[type="number"] {
   }
   .event-title {
     font-size: 32;
-    font-weight: 500;
+    font-weight: 600;
   }
 }
 
