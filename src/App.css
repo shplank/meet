@@ -107,7 +107,7 @@ input[type="number"] {
   display: flex;
   flex-direction: column;
   max-width: 300px;
-  margin: 0 auto 20px;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -139,8 +139,7 @@ input[type="number"] {
 }
 
 .events {
-  margin: 0 auto 20px;
-  padding-left: 10px;
+  margin: 0 auto;
 }
 
 .number-container {
@@ -301,7 +300,7 @@ input[type="number"] {
 
 .event-title {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .details-btn {
@@ -399,11 +398,11 @@ input[type="number"] {
     margin: 10px 35%;
   }
   .CitySearch {
-    margin: 0 auto;
+    margin: 0 auto 20px;
   }
   .events {
-    margin: 0 auto;
-    padding-left: 0;
+    margin: 0 auto 20px;
+    padding-left: 10px;
   }
   .data-vis-wrapper {
     width: 750px;
@@ -422,11 +421,11 @@ input[type="number"] {
 
 @media screen and (min-width: 500px) and (max-width: 991px) {
   .CitySearch {
-    margin: 0 auto;
+    margin: 0 auto 20px;
   }
   .events {
-    margin: 0 auto;
-    padding-left: 0;
+    margin: 0 auto 20px;
+    padding-left: 10px;
   }
   .data-vis-wrapper {
     width: 400px;
