@@ -213,7 +213,7 @@ input[type="number"] {
 
 .recharts-surface {
   overflow: visible;
-  padding-left: 20px;
+  padding-left: 30px;
   white-space: nowrap;
 }
 
@@ -300,7 +300,7 @@ input[type="number"] {
 
 .event-title {
   font-size: 24px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .details-btn {
@@ -416,10 +416,15 @@ input[type="number"] {
   }
   .event-title {
     font-size: 32;
+    font-weight: 500;
   }
 }
 
 @media screen and (min-width: 500px) and (max-width: 991px) {
+  .Settings {
+    flex-flow: row;
+    margin: 10px 20%;
+  }
   .CitySearch {
     margin: 0 auto 20px;
   }
