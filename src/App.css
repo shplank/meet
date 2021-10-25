@@ -49,10 +49,6 @@ p {
   margin: 5px 0;
 }
 
-h1 {
-  font-size: 24;
-}
-
 .display-none {
   display: none;
 }
@@ -303,6 +299,11 @@ input[type="number"] {
   }
 }
 
+.event-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
 .details-btn {
   position: absolute;
   background-color: #dee;
@@ -397,26 +398,40 @@ input[type="number"] {
     flex-flow: row;
     margin: 10px 35%;
   }
+  .CitySearch {
+    margin: 0 auto;
+  }
+  .events {
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  .data-vis-wrapper {
+    width: 750px;
+    flex-direction: row;
+  }
   .event {
     margin: 10px 20%;
   }
   .event-container {
     width: 850px;
   }
-  h1 {
+  .event-title {
     font-size: 32;
-  }
-  .data-vis-wrapper {
-    width: 750px;
-    flex-direction: row;
   }
 }
 
 @media screen and (min-width: 500px) and (max-width: 991px) {
-  .event-container {
-    width: 450px;
+  .CitySearch {
+    margin: 0 auto;
+  }
+  .events {
+    margin: 0 auto;
+    padding-left: 0;
   }
   .data-vis-wrapper {
     width: 400px;
+  }
+  .event-container {
+    width: 450px;
   }
 }
