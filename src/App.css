@@ -111,7 +111,7 @@ input[type="number"] {
   display: flex;
   flex-direction: column;
   max-width: 300px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   position: relative;
 }
 
@@ -140,6 +140,11 @@ input[type="number"] {
 
 .suggestions > li:hover {
   background-color: #bcc;
+}
+
+.events {
+  margin: 0 auto 20px;
+  padding-left: 10px;
 }
 
 .number-container {
