@@ -25,7 +25,7 @@ export const checkToken = async (accessToken) => {
     .then((res) => res.json())
     .catch((error) => error.json());
 
-  return result;
+  return result.error ? false : true;
 };
 
 /**

@@ -34,12 +34,7 @@ class App extends Component {
             events: events.slice(0, this.state.numberOfEvents),
             locations: extractLocations(events) });
         };
-        if (!navigator.onLine) {
-          this.setState({infoText: <p className="offline-alert">You are currently offline;<br/>results may be limited</p>});
-          console.log("user offline");
-        } else {
-          this.setState({ infoText: ''});
-        }
+        
       });
     }
   }
@@ -88,7 +83,8 @@ class App extends Component {
       <div className="App">
         <div className="Settings">
           <img width="100px" height="45px" src={logo} alt="Logo" className="logo" />
-          <WarningAlert text={this.state.infoText} />
+          { !navigator.onLine ? (<WarningAlert text='You are currently offline; results may be limited' />) : (<WarningAlert text=' ' />)}
+          
           <CitySearch locations={locations} updateEvents={this.updateEvents} />
           <NumberOfEvents numberOfEvents={numberOfEvents} updateNumberOfEvents={this.updateNumberOfEvents} />
         </div>
@@ -98,7 +94,7 @@ class App extends Component {
             <EventGenre events={events} />
           </div>
           <ResponsiveContainer height={500}>
-            <ScatterChart width={300} height={480} margin={{ top: 20, right: 20, bottom: 10, left: 30 }}>
+            <ScatterChart width={300} height={480} margin={{ top: 20, right: 20, bottom: 10, left: 40 }}>
               <CartesianGrid />
               <XAxis type="number" dataKey="number" name="number of events" allowDecimals={false} />
               <YAxis type="category" dataKey="city" name="city" />
