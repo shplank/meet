@@ -13,7 +13,7 @@ const removeQuery = () => {
       window.location.pathname;
     window.history.pushState("", "", newurl);
   } else {
-    var newurl = window.location.protocol + "//" + window.location.host;
+    newurl = window.location.protocol + "//" + window.location.host;
     window.history.pushState("", "", newurl);
   }
 };
@@ -57,7 +57,7 @@ export const getEvents = async () => {
 
   if (token) {
     removeQuery();
-    const url = 'https://b46qz3whp2.execute-api.us-west-1.amazonaws.com/dev/api/get-events' + '/' + token;
+    const url = `https://b46qz3whp2.execute-api.us-west-1.amazonaws.com/dev/api/get-events/${token}`
     const result = await axios.get(url);
     if (result.data) {
       var locations = extractLocations(result.data.events);
@@ -90,10 +90,9 @@ export const getAccessToken = async () => {
 };
 
 const getToken = async (code) => {
-  removeQuery();
   const encodeCode = encodeURIComponent(code);
   const { access_token } = await fetch(
-    'https://b46qz3whp2.execute-api.us-west-1.amazonaws.com/dev/api/token' + '/' + encodeCode
+    `https://b46qz3whp2.execute-api.us-west-1.amazonaws.com/dev/api/token/${encodeCode}`
   )
     .then((res) => {
       return res.json();
