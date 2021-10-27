@@ -48,7 +48,7 @@ const getEvents = async () => {
   }
 
   if (!navigator.onLine) {
-    const data = localStorage.getItem("lastEvents");
+    const data = await localStorage.getItem("lastEvents");
     NProgress.done();
     return data?JSON.parse(data).events:[];
   }
@@ -70,7 +70,7 @@ const getEvents = async () => {
 };
 
 const getAccessToken = async () => {
-  const accessToken = localStorage.getItem('access_token');
+  const accessToken = await localStorage.getItem('access_token');
   const tokenCheck = accessToken && (await checkToken(accessToken));
 
   if (!accessToken || tokenCheck.error) {
@@ -90,6 +90,7 @@ const getAccessToken = async () => {
 };
 
 const getToken = async (code) => {
+  removeQuery();
   const encodeCode = encodeURIComponent(code);
   const { access_token } = await fetch(
     'https://b46qz3whp2.execute-api.us-west-1.amazonaws.com/dev/api/token' + '/' + encodeCode
