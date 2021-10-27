@@ -5,9 +5,7 @@ const EventGenre = ({ events }) => {
 
   const [data, setData] = useState([]);
 
-  useEffect(() => {
-    setData(() => getData());
-    }, [events]);
+  const colors = ['#1E6771', '#682F9D', '#94101D', '#C64306', '#8B6D04'];
 
   const getData = () => {
     const genres = ['Node', 'JavaScript', 'React', 'AngularJS', 'jQuery'];
@@ -20,7 +18,9 @@ const EventGenre = ({ events }) => {
     return data;
   };
 
-  const colors = ['#1E6771', '#682F9D', '#94101D', '#C64306', '#8B6D04'];
+  useEffect(() => {
+    setData(() => getData());
+    }, [events]);
 
   return (
     <ResponsiveContainer height={200} >
