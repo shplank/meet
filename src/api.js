@@ -13,12 +13,12 @@ const removeQuery = () => {
       window.location.pathname;
     window.history.pushState("", "", newurl);
   } else {
-    newurl = window.location.protocol + "//" + window.location.host;
+    var newurl = window.location.protocol + "//" + window.location.host;
     window.history.pushState("", "", newurl);
   }
 };
 
-const checkToken = async (accessToken) => {
+export const checkToken = async (accessToken) => {
   const result = await fetch(
     `https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=${accessToken}`
   )
@@ -33,13 +33,13 @@ const checkToken = async (accessToken) => {
  * It will also remove all duplicates by creating another new array using the spread operator and spreading a Set.
  * The Set will remove all duplicates from the array.
  */
-const extractLocations = (events) => {
+export const extractLocations = (events) => {
   var extractLocations = events.map((event) => event.location);
   var locations = [...new Set(extractLocations)];
   return locations;
 };
 
-const getEvents = async () => {
+export const getEvents = async () => {
   NProgress.start();
 
   if (window.location.href.startsWith("http://localhost")) {
@@ -48,7 +48,7 @@ const getEvents = async () => {
   }
 
   if (!navigator.onLine) {
-    const data = await localStorage.getItem("lastEvents");
+    const data = localStorage.getItem("lastEvents");
     NProgress.done();
     return data?JSON.parse(data).events:[];
   }
@@ -69,14 +69,14 @@ const getEvents = async () => {
   }
 };
 
-const getAccessToken = async () => {
-  const accessToken = await localStorage.getItem('access_token');
+export const getAccessToken = async () => {
+  const accessToken = localStorage.getItem('access_token');
   const tokenCheck = accessToken && (await checkToken(accessToken));
 
   if (!accessToken || tokenCheck.error) {
-    await localStorage.removeItem("access_token");
+    await localStorage.removeItem('access_token');
     const searchParams = new URLSearchParams(window.location.search);
-    const code = await searchParams.get("code");
+    const code = await searchParams.get('code');
     if (!code) {
       const results = await axios.get(
         "https://b46qz3whp2.execute-api.us-west-1.amazonaws.com/dev/api/get-auth-url"
@@ -104,5 +104,3 @@ const getToken = async (code) => {
 
   return access_token;
 };
-
-export { getEvents, getAccessToken, extractLocations, getToken, checkToken };
