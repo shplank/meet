@@ -94,8 +94,8 @@ class App extends Component {
             <p className="data-description">The pie chart below shows a breakdown of events by coding language; the scatter chart shows the number of events in each city.</p>
             <EventGenre events={events} />
           </div>
-          <ResponsiveContainer width={300}>
-            <ScatterChart width={300} height={480} margin={{ top: 20, right: 20, bottom: 10, left: 40 }}>
+          <ResponsiveContainer height={500}>
+            <ScatterChart width={280} height={480} margin={{ top: 20, right: 20, bottom: 10, left: 40 }}>
               <CartesianGrid />
               <XAxis type="number" dataKey="number" name="number of events" allowDecimals={false} />
               <YAxis type="category" dataKey="city" name="city" />
