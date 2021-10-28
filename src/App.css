@@ -192,15 +192,21 @@ input[type="number"] {
 .metrics-btn {
   background-color: #ddd;
   padding: 5px 8px;
-  margin: 20px 10px 10px;
+  margin: 10px 10px 5px;
   border-radius: 4px;
   outline: none;
   cursor: pointer;
 }
 
+.results {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Below is styling for the data visualization elements */
 
 .data-vis-wrapper {
+  position: fixed;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -217,10 +223,9 @@ input[type="number"] {
 }
 
 .data-description {
-  width: 280px;
-  padding: 10px;
-  border: 1px solid #222;
-  border-radius: 4px;
+  width: 250px;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .data-desc-pie {
@@ -408,33 +413,6 @@ input[type="number"] {
   font-family: "Roboto";
 }
 
-@media only screen and (min-width: 992px) {
-  .Settings {
-    flex-flow: row;
-    margin: 10px 35%;
-  }
-  .CitySearch {
-    margin: 0 20px 20px;
-  }
-  .events {
-    margin: 0 auto 20px;
-  }
-  .data-vis-wrapper {
-    width: 750px;
-    flex-direction: row;
-  }
-  .event {
-    margin: 10px 20%;
-  }
-  .event-container {
-    width: 850px;
-  }
-  .event-title {
-    font-size: 32;
-    font-weight: 700;
-  }
-}
-
 @media screen and (min-width: 500px) and (max-width: 991px) {
   .Settings {
     flex-flow: row;
@@ -447,9 +425,39 @@ input[type="number"] {
     margin: 0 auto 20px;
   }
   .data-vis-wrapper {
-    width: 400px;
+    width: 450px;
   }
   .event-container {
     width: 450px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .Settings {
+    flex-flow: row;
+    margin: 10px 35%;
+  }
+  .CitySearch {
+    margin: 0 20px 20px;
+  }
+  .events {
+    margin: 0 auto 20px;
+  }
+  .results {
+    display: flex;
+    flex-direction: row;
+  }
+  .data-vis-wrapper {
+    width: 450px;
+  }
+  .event {
+    margin: 10px 20%;
+  }
+  .event-container {
+    width: 850px;
+  }
+  .event-title {
+    font-size: 32;
+    font-weight: 700;
   }
 }

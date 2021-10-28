@@ -105,22 +105,24 @@ class App extends Component {
           <NumberOfEvents numberOfEvents={numberOfEvents} updateNumberOfEvents={this.updateNumberOfEvents} />
           <button className="metrics-btn" onClick={() => {this.showHideMetrics()}}>{this.state.metricsBtnText}</button>
         </div>
-        <div className={dataVisibility}>
-          <div className="data-desc-pie">
-            <p className="data-description">The pie chart below shows a breakdown of events by coding language; the scatter chart shows the number of events in each city.</p>
+        <div className="results">
+          <div className={dataVisibility}>
             <EventGenre events={events} />
+            <p className="data-description">breakdown of events by topic</p>
+            <hr/>
+            <ResponsiveContainer height={500}>
+              <ScatterChart width={280} height={480} margin={{ top: 20, right: 20, bottom: 10, left: 40 }}>
+                <CartesianGrid />
+                <XAxis type="number" dataKey="number" name="number of events" allowDecimals={false} />
+                <YAxis type="category" dataKey="city" name="city" />
+                <Tooltip cursor={{ strokeDasharray: '3 3' }} />
+                <Scatter data={this.getData()} fill="#696969" />
+              </ScatterChart>
+            </ResponsiveContainer>
+            <p className="data-description">number of events in each city</p>
           </div>
-          <ResponsiveContainer height={500}>
-            <ScatterChart width={280} height={480} margin={{ top: 20, right: 20, bottom: 10, left: 40 }}>
-              <CartesianGrid />
-              <XAxis type="number" dataKey="number" name="number of events" allowDecimals={false} />
-              <YAxis type="category" dataKey="city" name="city" />
-              <Tooltip cursor={{ strokeDasharray: '3 3' }} />
-              <Scatter data={this.getData()} fill="#696969" />
-            </ScatterChart>
-          </ResponsiveContainer>
+          <EventList events={events} />
         </div>
-        <EventList events={events} />
         <WelcomeScreen showWelcomeScreen={showWelcomeScreen} getAccessToken={() => { getAccessToken() }} />
       </div>
     );
