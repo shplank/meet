@@ -192,11 +192,13 @@ input[type="number"] {
 .metrics-btn {
   background-color: #ddd;
   padding: 5px 8px;
-  margin: 10px;
+  margin: 20px 10px 10px;
   border-radius: 4px;
   outline: none;
   cursor: pointer;
 }
+
+/* Below is styling for the data visualization elements */
 
 .data-vis-wrapper {
   display: flex;
@@ -217,6 +219,8 @@ input[type="number"] {
 .data-description {
   width: 280px;
   padding: 10px;
+  border: 1px solid #222;
+  border-radius: 4px;
 }
 
 .data-desc-pie {
