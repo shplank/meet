@@ -69,7 +69,7 @@ class App extends Component {
     const {locations, events} = this.state;
     const data = locations.map((location)=>{
       const number = events.filter((event) => event.location === location).length
-      const city = location.split(', ').shift()
+      const city = location.split(', ').shift().split('-').shift()
       return {city, number};
     })
     return data;
@@ -84,7 +84,7 @@ class App extends Component {
         <div className="Settings">
           <div className="logo">
             <img width="100px" height="45px" src={logo} alt="Logo" />
-            { !navigator.onLine ? (<WarningAlert text='You are currently offline; results may be limited' />) : (<WarningAlert text=' ' />)}
+            { !navigator.onLine ? (<WarningAlert text='You are offline, results may be limited' />) : (<WarningAlert text=' ' />)}
           </div>
           <CitySearch locations={locations} updateEvents={this.updateEvents} />
           <NumberOfEvents numberOfEvents={numberOfEvents} updateNumberOfEvents={this.updateNumberOfEvents} />
