@@ -121,7 +121,9 @@ class App extends Component {
             </ResponsiveContainer>
             <p className="data-description">number of events in each city</p>
           </div>
-          <EventList events={events} />
+          <div>
+            <EventList events={events} />
+          </div>
         </div>
         <WelcomeScreen showWelcomeScreen={showWelcomeScreen} getAccessToken={() => { getAccessToken() }} />
       </div>
