@@ -202,7 +202,7 @@ input[type="number"] {
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 /* Below is styling for the data visualization elements */
@@ -442,7 +442,8 @@ input[type="number"] {
   }
   .results {
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
+    justify-content: center;
   }
   .data-vis-wrapper {
     width: 450px;
