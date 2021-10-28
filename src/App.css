@@ -201,6 +201,8 @@ input[type="number"] {
 .results {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  justify-content: center;
 }
 
 /* Below is styling for the data visualization elements */
