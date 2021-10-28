@@ -189,6 +189,15 @@ input[type="number"] {
   padding: 0 8px;
 }
 
+.metrics-btn {
+  background-color: #ddd;
+  padding: 5px 8px;
+  margin: 10px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
 .data-vis-wrapper {
   display: flex;
   flex-direction: column;

@@ -76,21 +76,22 @@ class App extends Component {
     return data;
   };
 
-  showHideMetrics = () => {
-    if (this.dataVisibility !== 'display-none')
-    this.setState({
-      metricsBtnText: 'show metrics',
-      dataVisibility: 'display-none'
-    });
-    else 
-    this.setState({
-      metricsBtnText: 'hide metrics',
-      dataVisibility: 'data-vis-wrapper'
-    });
+  showHideMetrics () {
+    if (this.state.dataVisibility === 'display-none') {
+      this.setState({
+        metricsBtnText: 'hide metrics',
+        dataVisibility: 'data-vis-wrapper'
+      });
+    } else {
+      this.setState({
+        metricsBtnText: 'show metrics',
+        dataVisibility: 'display-none'
+      });
+    }
   };
 
   render() {
-    const { locations, events, numberOfEvents, showWelcomeScreen } = this.state;
+    const { locations, events, numberOfEvents, showWelcomeScreen, dataVisibility } = this.state;
     if (showWelcomeScreen === undefined) 
     return <div className="App" />
     return (
@@ -102,9 +103,9 @@ class App extends Component {
           </div>
           <CitySearch locations={locations} updateEvents={this.updateEvents} />
           <NumberOfEvents numberOfEvents={numberOfEvents} updateNumberOfEvents={this.updateNumberOfEvents} />
-          <button className="details-btn" onClick={() => {this.showHideMetrics()}}>{this.state.metricsBtnText}</button>
+          <button className="metrics-btn" onClick={() => {this.showHideMetrics()}}>{this.state.metricsBtnText}</button>
         </div>
-        <div className={this.state.dataVisibility}>
+        <div className={dataVisibility}>
           <div className="data-desc-pie">
             <p className="data-description">The pie chart below shows a breakdown of events by coding language; the scatter chart shows the number of events in each city.</p>
             <EventGenre events={events} />
