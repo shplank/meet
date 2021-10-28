@@ -37,6 +37,8 @@ body {
 }
 
 .logo {
+  flex-direction: column;
+  width: 120px;
   margin: 0px auto;
 }
 
@@ -304,7 +306,7 @@ input[type="number"] {
 
 .details-btn {
   position: absolute;
-  background-color: #dee;
+  background-color: #ddd;
   right: 5px;
   bottom: 5px;
   padding: 5px 8px;
@@ -397,11 +399,10 @@ input[type="number"] {
     margin: 10px 35%;
   }
   .CitySearch {
-    margin: 0 auto 20px;
+    margin: 0 20px 20px;
   }
   .events {
     margin: 0 auto 20px;
-    padding-left: 10px;
   }
   .data-vis-wrapper {
     width: 750px;
@@ -425,11 +426,10 @@ input[type="number"] {
     margin: 10px 20%;
   }
   .CitySearch {
-    margin: 0 auto 20px;
+    margin: 0 20px 20px;
   }
   .events {
     margin: 0 auto 20px;
-    padding-left: 10px;
   }
   .data-vis-wrapper {
     width: 400px;

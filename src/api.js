@@ -25,7 +25,7 @@ export const checkToken = async (accessToken) => {
     .then((res) => res.json())
     .catch((error) => error.json());
 
-  return result.error ? false : true;
+  return result;
 };
 
 /**
@@ -52,9 +52,9 @@ export const getEvents = async () => {
     NProgress.done();
     return data?JSON.parse(data).events:[];
   }
-
+  
   const token = await getAccessToken();
-
+  console.log('getEvents token: ', token)
   if (token) {
     removeQuery();
     const url = `https://b46qz3whp2.execute-api.us-west-1.amazonaws.com/dev/api/get-events/${token}`
