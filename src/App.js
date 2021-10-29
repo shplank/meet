@@ -112,12 +112,12 @@ class App extends Component {
             <hr/>
             <p className="data-description">number of events in each city:</p>
             <ResponsiveContainer height={500}>
-              <ScatterChart width={280} height={480} margin={{ top: 20, right: 20, bottom: 10, left: 40 }}>
+              <ScatterChart width={280} height={480} margin={{ top: 20, right: 10, bottom: 10, left: 30 }}>
                 <CartesianGrid />
                 <XAxis type="number" dataKey="number" name="number of events" allowDecimals={false} />
                 <YAxis type="category" dataKey="city" name="city" />
                 <Tooltip cursor={{ strokeDasharray: '3 3' }} />
-                <Scatter data={this.getData()} fill="#696969" />
+                <Scatter data={this.getData()} fill="#505050" />
               </ScatterChart>
             </ResponsiveContainer>
           </div>
