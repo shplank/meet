@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/meet/static/css/main.a388981e.chunk.css",
+    "main.css": "/meet/static/css/main.ce8c04a6.chunk.css",
     "main.js": "/meet/static/js/main.e67f6c77.chunk.js",
     "main.js.map": "/meet/static/js/main.e67f6c77.chunk.js.map",
     "runtime-main.js": "/meet/static/js/runtime-main.17601d84.js",
@@ -10,7 +10,7 @@
     "index.html": "/meet/index.html",
     "service-worker.js": "/meet/service-worker.js",
     "service-worker.js.map": "/meet/service-worker.js.map",
-    "static/css/main.a388981e.chunk.css.map": "/meet/static/css/main.a388981e.chunk.css.map",
+    "static/css/main.ce8c04a6.chunk.css.map": "/meet/static/css/main.ce8c04a6.chunk.css.map",
     "static/js/2.c98c4c87.chunk.js.LICENSE.txt": "/meet/static/js/2.c98c4c87.chunk.js.LICENSE.txt",
     "static/media/MEETthin.881d0223.png": "/meet/static/media/MEETthin.881d0223.png",
     "static/media/WelcomeScreen.css": "/meet/static/media/composite.572c0ff6.jpg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.17601d84.js",
     "static/js/2.c98c4c87.chunk.js",
-    "static/css/main.a388981e.chunk.css",
+    "static/css/main.ce8c04a6.chunk.css",
     "static/js/main.e67f6c77.chunk.js"
   ]
 }
