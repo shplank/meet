@@ -151,7 +151,6 @@ input[type="number"] {
 .number-container {
   display: inline-flex;
   background-color: #fff;
-  flex-basis: 200px;
   max-width: 200px;
   height: 38px;
   text-align: center;
