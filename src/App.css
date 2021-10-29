@@ -225,14 +225,21 @@ input[type="number"] {
 }
 
 .data-description {
-  width: 250px;
+  width: 240px;
   font-size: 14px;
-  margin-bottom: 10px;
+  margin: 0 auto 20px;
 }
 
 .recharts-surface {
   overflow: visible;
   white-space: nowrap;
+}
+
+hr {
+  width: 280px;
+  border: 0;
+  height: 1px;
+  margin: 10px auto;
 }
 
 /* Below is styling for the list of events */
@@ -241,7 +248,6 @@ input[type="number"] {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -429,7 +435,38 @@ input[type="number"] {
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1439px) {
+  .Settings {
+    flex-flow: row;
+    margin: 10px 35%;
+  }
+  .CitySearch {
+    margin: 0 20px 20px;
+  }
+  .events {
+    margin: 0 auto 20px;
+  }
+  .results {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+  .data-vis-wrapper {
+    width: 300px;
+  }
+  .event {
+    margin: 10px 20%;
+  }
+  .event-container {
+    width: 600px;
+  }
+  .event-title {
+    font-size: 32;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
   .Settings {
     flex-flow: row;
     margin: 10px 35%;
