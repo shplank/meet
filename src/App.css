@@ -189,12 +189,13 @@ input[type="number"] {
 .Alert {
   position: relative;
   padding: 5px;
+  font-size: 14px;
 }
 
 .metrics-btn {
   background-color: #ddd;
   padding: 5px 8px;
-  margin: 10px auto;
+  margin: 15px auto 10px;
   border-radius: 4px;
   outline: none;
   cursor: pointer;
@@ -235,7 +236,7 @@ input[type="number"] {
 .data-description {
   width: 240px;
   font-size: 14px;
-  margin: 10px auto;
+  margin: 10px auto 0;
 }
 
 .recharts-surface {
