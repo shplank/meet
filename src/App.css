@@ -458,6 +458,7 @@ hr {
   }
   .data-vis-wrapper {
     width: 300px;
+    margin: 10px;
   }
   .event {
     margin: 10px 20%;
@@ -490,6 +491,7 @@ hr {
   }
   .data-vis-wrapper {
     width: 450px;
+    margin: 10px;
   }
   .event {
     margin: 10px 20%;
