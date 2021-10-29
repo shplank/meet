@@ -107,9 +107,10 @@ class App extends Component {
         </div>
         <div className="results">
           <div className={dataVisibility}>
+          <p className="data-description">breakdown of events by topic:</p>
             <EventGenre events={events} />
-            <p className="data-description">breakdown of events by topic</p>
             <hr/>
+            <p className="data-description">number of events in each city:</p>
             <ResponsiveContainer height={500}>
               <ScatterChart width={280} height={480} margin={{ top: 20, right: 20, bottom: 10, left: 40 }}>
                 <CartesianGrid />
@@ -119,7 +120,6 @@ class App extends Component {
                 <Scatter data={this.getData()} fill="#696969" />
               </ScatterChart>
             </ResponsiveContainer>
-            <p className="data-description">number of events in each city</p>
           </div>
           <div>
             <EventList events={events} />
