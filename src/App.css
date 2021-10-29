@@ -29,7 +29,7 @@ body {
   flex-flow: column nowrap;
   align-items: center;
   background-color: #fff;
-  padding: 20px;
+  padding: 5px 20px;
   margin: 10px 100%;
   border: 2px solid #222;
   border-radius: 5px;
@@ -201,6 +201,7 @@ input[type="number"] {
 .results {
   display: flex;
   flex-flow: column nowrap;
+  gap: 20px;
   width: 100%;
   justify-content: flex-start;
 }
@@ -208,7 +209,6 @@ input[type="number"] {
 /* Below is styling for the data visualization elements */
 
 .data-vis-wrapper {
-  position: fixed;
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -237,7 +237,7 @@ input[type="number"] {
 
 hr {
   width: 280px;
-  border: 0;
+  border: 1;
   height: 1px;
   margin: 10px auto;
 }
