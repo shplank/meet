@@ -204,6 +204,7 @@ input[type="number"] {
   gap: 20px;
   width: 100%;
   justify-content: flex-start;
+  align-items: center;
 }
 
 /* Below is styling for the data visualization elements */
@@ -214,7 +215,7 @@ input[type="number"] {
   width: 300px;
   max-height: 800px;
   align-items: center;
-  align-self: flex-end;
+  align-self: flex-start;
   margin: 10px auto;
   padding: 5px;
   background-color: #fff;
@@ -452,7 +453,8 @@ hr {
   .results {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
   }
   .data-vis-wrapper {
     width: 300px;
@@ -483,7 +485,8 @@ hr {
   .results {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
   }
   .data-vis-wrapper {
     width: 450px;
