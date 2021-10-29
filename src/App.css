@@ -425,7 +425,7 @@ hr {
   font-family: "Roboto";
 }
 
-@media screen and (min-width: 500px) and (max-width: 991px) {
+@media screen and (min-width: 700px) and (max-width: 991px) {
   .Settings {
     flex-flow: row;
     margin: 10px 10%;
