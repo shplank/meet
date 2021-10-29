@@ -40,7 +40,7 @@ body {
 .logo {
   flex-direction: column;
   margin: 0px auto;
-  padding-top: 10px;
+  padding-top: 15px;
   font-size: 14px;
 }
 
@@ -109,7 +109,7 @@ input[type="number"] {
 
 .CitySearch {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   max-width: 300px;
   margin: 0 auto;
   position: relative;
@@ -143,6 +143,8 @@ input[type="number"] {
 }
 
 .events {
+  display: flex;
+  flex-flow: column nowrap;
   margin: 0 auto;
 }
 
@@ -186,7 +188,7 @@ input[type="number"] {
 
 .Alert {
   position: relative;
-  padding: 8px;
+  padding: 5px;
 }
 
 .metrics-btn {
@@ -426,9 +428,6 @@ hr {
     flex-flow: row;
     margin: 10px 20%;
   }
-  .CitySearch {
-    margin: 0 20px 20px;
-  }
   .events {
     margin: 0 auto 20px;
   }
@@ -444,9 +443,6 @@ hr {
   .Settings {
     flex-flow: row;
     margin: 10px 35%;
-  }
-  .CitySearch {
-    margin: 0 20px 20px;
   }
   .events {
     margin: 0 auto 20px;

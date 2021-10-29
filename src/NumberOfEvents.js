@@ -28,7 +28,6 @@ class NumberOfEvents extends Component {
         <div className="alert-space">
           <ErrorAlert text={this.state.infoText} />
         </div>
-        <br />
         <div className="number-container">
           <label className="number-label" for="number">number of events:</label>
           <input
