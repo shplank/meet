@@ -167,6 +167,7 @@ input[type="number"] {
 .number-label {
   display: inline-block;
   width: 126px;
+  height: 38px;
   padding: 8px 4px 8px 10px;
   background-color: #fff;
   text-align: center;
@@ -194,6 +195,7 @@ input[type="number"] {
 .metrics-btn {
   background-color: #ddd;
   padding: 5px 8px;
+  margin: 10px auto;
   border-radius: 4px;
   outline: none;
   cursor: pointer;
@@ -444,8 +446,14 @@ hr {
     flex-flow: row;
     margin: 10px 35%;
   }
+  .CitySearch {
+    margin: 0 20px 15px;
+  }
   .events {
-    margin: 0 auto 20px;
+    margin: 0 auto 15px;
+  }
+  .metrics-btn {
+    margin: 0 0 0 20px;
   }
   .results {
     display: flex;
@@ -475,10 +483,13 @@ hr {
     margin: 10px 35%;
   }
   .CitySearch {
-    margin: 0 20px 20px;
+    margin: 0 20px 15px;
   }
   .events {
-    margin: 0 auto 20px;
+    margin: 0 auto 15px;
+  }
+  .metrics-btn {
+    margin: 0 0 0 20px;
   }
   .results {
     display: flex;
