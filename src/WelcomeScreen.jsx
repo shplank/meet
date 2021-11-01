@@ -8,7 +8,7 @@ function WelcomeScreen(props) {
   <div className="WelcomeScreen">
     <div className="WelcomeBox">
       <h1>Welcome to</h1>
-      <img width="200px" height="90px" src={logo} alt="Logo" className="logo-welcome" />
+      <img width="200px" height="90px" src={logo} alt="Logo" className="logo-welcome" /> 
       <h4>Log in to see upcoming<br/>events around the world<br/>for full-stack developers</h4>
       <div className="button_cont" align="center">
         <div class="google-btn">
