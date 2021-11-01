@@ -1,10 +1,14 @@
 MEET app
 
-A serverless, progressive web application (PWA) built with React using a test-driven development (TDD) technique. The application uses the Meetup API to fetch upcoming events for a selected city.
+![Meet screenshot](https://github.com/shplank/meet/blob/main/meet4repo.png?raw=true)
+
+A serverless, progressive web application (PWA) built with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events for a selected city.
+
+The intent is to allow web developers to search for events around the world, showing results in various cities on different web dev topics. Also includes data visualization to show a breakdown of events by topic and how many events are upcoming in each city.
 
 View on GitHub Pages: https://shplank.github.io/meet/
 
-User Stories and Test Scenarios
+Features as described by User Stories and Test Scenarios
 
 FEATURE 1: FILTER EVENTS BY CITY
 
